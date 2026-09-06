@@ -1,0 +1,35 @@
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Data and Artifacts (Exclude raw data and large output files)
+*.xlsx
+*.csv
+*.pkl
+phase1_outputs/
+phase2_outputs/
+*.txt
+
+# Exclude logs
+*.log
+
+# Allow specific text outputs used for documentation if needed
+!requirements.txt
+!README.md
+!CHANGELOG.md

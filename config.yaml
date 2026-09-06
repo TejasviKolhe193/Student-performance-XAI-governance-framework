@@ -1,0 +1,31 @@
+project:
+  name: "Explainable AI Governance Framework for Fair Student Performance Evaluation"
+  description: "End-to-end pipeline covering data preparation, class balancing, model training, XAI, and fairness auditing for student dropout prediction."
+
+paths:
+  raw_data: "dataset_evasao_MDE.xlsx"
+  phase1_output_dir: "phase1_outputs"
+  phase2_output_dir: "phase2_outputs"
+  phase3_output_dir: "phase3_outputs"
+
+preprocessing:
+  target_col: "situacao"
+  missing_threshold: 0.20
+  winsorization:
+    multiplier: 1.5
+    target_columns:
+      - "idade"
+      - "rendabruta"
+      - "quantidade_computadores"
+      - "quantidade_notebooks"
+      - "qtd_filhos"
+  split:
+    test_size: 0.20
+    random_state: 42
+    stratify: true
+
+modeling:
+  models: ["RF", "DT", "LR", "SVM"]
+  balancing_strategies: ["Unbalanced", "UnderSampling", "OverSampling (SMOTE)", "SMOTEENN"]
+  feature_selection: ["ANOVA", "Backward", "FeatureImportance"]
+  cv_folds: 10

@@ -1,0 +1,11 @@
+Balance,FS,Model,Recall,Precision,F1,AUC,Accuracy,10-CV Recall,Best Params
+SMOTEENN,ANOVA,SVM,0.914,0.231,0.369,0.591,0.301,0.873,"{'C': 0.1, 'kernel': 'rbf'}"
+UnderSampling,Backward,SVM,0.91,0.231,0.369,0.759,0.303,0.695,"{'C': 10.0, 'kernel': 'rbf'}"
+UnderSampling,ANOVA,SVM,0.907,0.231,0.368,0.727,0.303,0.801,"{'C': 10.0, 'kernel': 'rbf'}"
+Unbalanced,ANOVA,SVM,0.902,0.23,0.367,0.689,0.303,0.867,"{'C': 0.1, 'kernel': 'rbf'}"
+SMOTEENN,FeatureImportance,SVM,0.895,0.232,0.369,0.72,0.314,0.863,"{'C': 1.0, 'kernel': 'rbf'}"
+Unbalanced,Backward,SVM,0.859,0.234,0.367,0.686,0.337,0.849,"{'C': 10.0, 'kernel': 'rbf'}"
+UnderSampling,FeatureImportance,RF,0.848,0.836,0.842,0.951,0.929,0.878,"{'criterion': 'gini', 'max_depth': 20, 'min_samples_split': 5}"
+UnderSampling,ANOVA,RF,0.846,0.841,0.844,0.95,0.93,0.877,"{'criterion': 'gini', 'max_depth': None, 'min_samples_split': 5}"
+UnderSampling,ANOVA,DT,0.846,0.64,0.729,0.854,0.859,0.879,"{'criterion': 'gini', 'max_depth': None, 'min_samples_split': 2}"
+UnderSampling,Backward,RF,0.842,0.851,0.846,0.953,0.931,0.874,"{'criterion': 'entropy', 'max_depth': 10, 'min_samples_split': 2}"

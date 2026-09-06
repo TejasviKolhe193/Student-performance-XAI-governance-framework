@@ -1,0 +1,5 @@
+Balance,FS,Model,Recall,Precision,F1,AUC,Accuracy,10-CV Recall,Best Params
+UnderSampling,FeatureImportance,RF,0.848,0.836,0.842,0.951,0.929,0.878,"{'criterion': 'gini', 'max_depth': 20, 'min_samples_split': 5}"
+UnderSampling,ANOVA,DT,0.846,0.64,0.729,0.854,0.859,0.879,"{'criterion': 'gini', 'max_depth': None, 'min_samples_split': 2}"
+SMOTEENN,Backward,LR,0.787,0.718,0.751,0.899,0.883,0.862,"{'C': 10.0, 'solver': 'lbfgs'}"
+SMOTEENN,ANOVA,SVM,0.914,0.231,0.369,0.591,0.301,0.873,"{'C': 0.1, 'kernel': 'rbf'}"

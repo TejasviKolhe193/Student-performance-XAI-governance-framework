@@ -23,6 +23,7 @@ __pycache__/
 *.csv
 *.pkl
 phase1_outputs/
+!phase1_outputs/*.png
 phase2_outputs/
 *.txt
 

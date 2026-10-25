@@ -286,9 +286,9 @@ def generate_dashboard():
             display: none;
             width: 100%;
             height: 100%;
-            padding: 12px 16px;
+            padding: 8px 14px;
             box-sizing: border-box;
-            gap: 14px;
+            gap: 12px;
             grid-template-columns: 58% 42%; /* LEFT: Text & Tables (Wider ~58%), RIGHT: Graphs (~42%) */
         }}
         .phase-section.active {{
@@ -306,19 +306,19 @@ def generate_dashboard():
             height: 100%;
             background: var(--bg-panel);
             border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 14px 18px;
+            border-radius: 10px;
+            padding: 9px 13px;
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 6px;
             overflow-y: auto;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
             scrollbar-width: thin;
             scrollbar-color: #cbd5e1 transparent;
         }}
         .text-pane::-webkit-scrollbar {{
-            width: 5px;
+            width: 4px;
         }}
         .text-pane::-webkit-scrollbar-thumb {{
             background: #cbd5e1;
@@ -330,12 +330,12 @@ def generate_dashboard():
             height: 100%;
             background: var(--bg-panel);
             border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 12px 14px;
+            border-radius: 10px;
+            padding: 9px 12px;
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 7px;
             overflow: hidden;
             position: relative;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
@@ -347,29 +347,32 @@ def generate_dashboard():
             align-items: flex-start;
             justify-content: space-between;
             border-bottom: 1px solid var(--border-color);
-            padding-bottom: 8px;
+            padding-bottom: 4px;
             flex-shrink: 0;
         }}
         .sec-title-wrap h2 {{
             font-family: 'Outfit', sans-serif;
-            font-size: 18px;
-            font-weight: 800;
+            font-size: 14.5px;
+            font-weight: 700;
             color: var(--text-main);
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
+            line-height: 1.25;
         }}
         .sec-title-wrap p {{
-            font-size: 12.5px;
+            font-size: 10.5px;
             color: var(--text-muted);
-            margin-top: 2px;
+            margin-top: 1px;
+            line-height: 1.2;
         }}
         .sec-tag {{
-            font-size: 11px;
+            font-size: 9.5px;
             font-weight: 700;
-            padding: 3px 9px;
+            padding: 2px 7px;
             border-radius: 20px;
             letter-spacing: 0.3px;
+            flex-shrink: 0;
         }}
         .tag-phase1 {{ background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; }}
         .tag-phase2 {{ background: #ecfdf5; color: #047857; border: 1px solid #a7f3d0; }}
@@ -381,42 +384,42 @@ def generate_dashboard():
         .spec-box {{
             background: #f8fafc;
             border: 1px solid var(--border-color);
-            border-radius: 9px;
-            padding: 10px 12px;
+            border-radius: 7px;
+            padding: 6px 9px;
             flex-shrink: 0;
         }}
         .spec-header-bar {{
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-bottom: 8px;
-            padding-bottom: 5px;
+            margin-bottom: 3px;
+            padding-bottom: 3px;
             border-bottom: 1px solid #e2e8f0;
         }}
         .spec-title {{
-            font-size: 11.5px;
+            font-size: 10px;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.5px;
             color: #1e40af;
             display: flex;
             align-items: center;
-            gap: 6px;
+            gap: 5px;
         }}
         .spec-grid {{
             display: flex;
             flex-direction: column;
-            gap: 5px;
+            gap: 2.5px;
         }}
         .spec-row {{
             display: grid;
-            grid-template-columns: 145px 1fr;
-            gap: 12px;
+            grid-template-columns: 120px 1fr;
+            gap: 8px;
             align-items: center;
             background: #ffffff;
             border: 1px solid #e2e8f0;
-            border-radius: 6px;
-            padding: 5px 8px;
+            border-radius: 5px;
+            padding: 2px 6px;
             transition: background 0.15s;
         }}
         .spec-row:hover {{
@@ -427,11 +430,11 @@ def generate_dashboard():
             background: #eff6ff;
             border: 1px solid #bfdbfe;
             color: #1e40af;
-            font-size: 10px;
+            font-size: 8.5px;
             font-weight: 700;
-            letter-spacing: 0.4px;
-            padding: 3px 6px;
-            border-radius: 4px;
+            letter-spacing: 0.3px;
+            padding: 1.5px 5px;
+            border-radius: 3px;
             text-align: center;
             white-space: nowrap;
             overflow: hidden;
@@ -458,9 +461,9 @@ def generate_dashboard():
             color: #991b1b;
         }}
         .spec-desc {{
-            font-size: 12.5px;
+            font-size: 10.5px;
             color: #1e293b;
-            line-height: 1.4;
+            line-height: 1.25;
             font-weight: 500;
         }}
         .spec-desc strong {{
@@ -469,10 +472,10 @@ def generate_dashboard():
         }}
         .spec-desc code {{
             background: #f1f5f9;
-            padding: 1px 5px;
+            padding: 0.5px 4px;
             border-radius: 3px;
             font-family: 'JetBrains Mono', monospace;
-            font-size: 11px;
+            font-size: 9.5px;
             color: #1d4ed8;
             border: 1px solid #e2e8f0;
         }}
@@ -481,39 +484,40 @@ def generate_dashboard():
         .kpi-row {{
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 8px;
+            gap: 6px;
             flex-shrink: 0;
         }}
         .kpi-stat-card {{
             background: #f8fafc;
             border: 1px solid var(--border-color);
-            border-top: 3px solid var(--primary);
-            border-radius: 8px;
-            padding: 8px 11px;
+            border-top: 2.5px solid var(--primary);
+            border-radius: 6px;
+            padding: 4px 8px;
         }}
         .kpi-stat-card.green {{ border-top-color: var(--success); }}
         .kpi-stat-card.purple {{ border-top-color: var(--purple); }}
         .kpi-stat-card.warning {{ border-top-color: var(--warning); }}
         .kpi-stat-card.red {{ border-top-color: var(--danger); }}
         .kpi-label {{
-            font-size: 10px;
+            font-size: 8.5px;
             text-transform: uppercase;
             color: var(--text-muted);
             font-weight: 700;
-            letter-spacing: 0.4px;
+            letter-spacing: 0.3px;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
         }}
         .kpi-val {{
             font-family: 'Outfit', sans-serif;
-            font-size: 20px;
+            font-size: 15px;
             font-weight: 800;
             color: var(--text-main);
-            margin: 2px 0;
+            margin: 1px 0;
+            line-height: 1.15;
         }}
         .kpi-subtext {{
-            font-size: 10px;
+            font-size: 8.5px;
             color: var(--text-muted);
             white-space: nowrap;
             overflow: hidden;
@@ -522,19 +526,19 @@ def generate_dashboard():
 
         /* DATA TABLE WRAPPER (CLEAN LIGHT DESIGN) */
         .table-wrap {{
-            flex: 1;
-            min-height: 130px;
+            flex: 1 1 auto;
+            min-height: 70px;
             background: #ffffff;
             border: 1px solid var(--border-color);
-            border-radius: 8px;
+            border-radius: 7px;
             overflow-y: auto;
             position: relative;
         }}
         .table-wrap h4 {{
-            font-size: 12px;
+            font-size: 10.5px;
             font-weight: 700;
             color: #1e293b;
-            padding: 7px 12px;
+            padding: 4px 9px;
             background: #f8fafc;
             border-bottom: 1px solid var(--border-color);
             position: sticky;
@@ -547,25 +551,27 @@ def generate_dashboard():
         table.results-tbl {{
             width: 100%;
             border-collapse: collapse;
-            font-size: 12px;
+            font-size: 10px;
             text-align: left;
         }}
         table.results-tbl th {{
             background: #f1f5f9;
-            padding: 7px 11px;
+            padding: 4px 8px;
             color: #334155;
             font-weight: 700;
-            font-size: 11px;
+            font-size: 9.5px;
             border-bottom: 1px solid var(--border-color);
             position: sticky;
-            top: 33px;
+            top: 24px;
             z-index: 1;
         }}
         table.results-tbl td {{
-            padding: 6.5px 11px;
+            padding: 3px 8px;
             border-bottom: 1px solid #f1f5f9;
             color: #334155;
             white-space: nowrap;
+            font-size: 10px;
+            line-height: 1.25;
         }}
         table.results-tbl tr:hover td {{
             background: #f8fafc;
@@ -579,11 +585,11 @@ def generate_dashboard():
         /* BADGES */
         .badge {{
             display: inline-block;
-            padding: 2.5px 8px;
-            border-radius: 12px;
-            font-size: 10.5px;
+            padding: 1.5px 6px;
+            border-radius: 10px;
+            font-size: 9px;
             font-weight: 700;
-            letter-spacing: 0.3px;
+            letter-spacing: 0.2px;
         }}
         .badge-pass {{ background: #ecfdf5; color: #047857; border: 1px solid #a7f3d0; }}
         .badge-warn {{ background: #fffbeb; color: #b45309; border: 1px solid #fde68a; }}
@@ -594,13 +600,13 @@ def generate_dashboard():
         /* CLINICAL / EVALUATOR CALLOUT BOX */
         .callout-box {{
             background: #f8fafc;
-            border-left: 4px solid var(--primary);
-            border-radius: 0 7px 7px 0;
-            padding: 8px 12px;
-            font-size: 12px;
+            border-left: 3.5px solid var(--primary);
+            border-radius: 0 6px 6px 0;
+            padding: 4px 8px;
+            font-size: 10px;
             color: #334155;
             flex-shrink: 0;
-            line-height: 1.45;
+            line-height: 1.3;
             border-top: 1px solid #e2e8f0;
             border-right: 1px solid #e2e8f0;
             border-bottom: 1px solid #e2e8f0;
@@ -1199,22 +1205,22 @@ def generate_dashboard():
                 <div class="kpi-row">
                     <div class="kpi-stat-card red">
                         <div class="kpi-label">#1 Risk Driver</div>
-                        <div class="kpi-val" style="font-size:16px;">GPA (ira)</div>
+                        <div class="kpi-val" style="font-size:13.5px;">GPA (ira)</div>
                         <div class="kpi-subtext">|SHAP| = 0.2717</div>
                     </div>
                     <div class="kpi-stat-card green">
                         <div class="kpi-label">#2 Behavioral</div>
-                        <div class="kpi-val" style="font-size:16px;">Attendance</div>
+                        <div class="kpi-val" style="font-size:13.5px;">Attendance</div>
                         <div class="kpi-subtext">|SHAP| = 0.0570</div>
                     </div>
                     <div class="kpi-stat-card warning">
                         <div class="kpi-label">#3 Friction</div>
-                        <div class="kpi-val" style="font-size:16px;">Failures</div>
+                        <div class="kpi-val" style="font-size:13.5px;">Failures</div>
                         <div class="kpi-subtext">|SHAP| = 0.0468</div>
                     </div>
                     <div class="kpi-stat-card purple">
                         <div class="kpi-label">Star Demo</div>
-                        <div class="kpi-val" style="font-size:16px;">Student #43</div>
+                        <div class="kpi-val" style="font-size:13.5px;">Student #43</div>
                         <div class="kpi-subtext">65% ➔ 28% Safe Zone</div>
                     </div>
                 </div>
@@ -1402,22 +1408,22 @@ def generate_dashboard():
                 <div class="kpi-row">
                     <div class="kpi-stat-card green">
                         <div class="kpi-label">Race Equity Audit</div>
-                        <div class="kpi-val" style="font-size:18px;">1.180</div>
+                        <div class="kpi-val" style="font-size:14.5px;">1.180</div>
                         <div class="kpi-subtext">PASSED (Four-Fifths)</div>
                     </div>
                     <div class="kpi-stat-card green">
                         <div class="kpi-label">Active Recall</div>
-                        <div class="kpi-val" style="font-size:18px;">80.8%</div>
+                        <div class="kpi-val" style="font-size:14.5px;">80.8%</div>
                         <div class="kpi-subtext">GPA &gt; 0 (2,722 Students)</div>
                     </div>
                     <div class="kpi-stat-card purple">
                         <div class="kpi-label">Active Precision</div>
-                        <div class="kpi-val" style="font-size:18px;">82.5%</div>
+                        <div class="kpi-val" style="font-size:14.5px;">82.5%</div>
                         <div class="kpi-subtext">Genuine Early Warning</div>
                     </div>
                     <div class="kpi-stat-card">
                         <div class="kpi-label">Audit Data Scope</div>
-                        <div class="kpi-val" style="font-size:18px;">100% Real</div>
+                        <div class="kpi-val" style="font-size:14.5px;">100% Real</div>
                         <div class="kpi-subtext">0 Synthetic Records</div>
                     </div>
                 </div>
@@ -1572,22 +1578,22 @@ def generate_dashboard():
                 <div class="kpi-row">
                     <div class="kpi-stat-card green">
                         <div class="kpi-label">Counselor Authority</div>
-                        <div class="kpi-val" style="font-size:18px;">100%</div>
+                        <div class="kpi-val" style="font-size:14.5px;">100%</div>
                         <div class="kpi-subtext">Final Human Override</div>
                     </div>
                     <div class="kpi-stat-card">
                         <div class="kpi-label">Autonomous Action</div>
-                        <div class="kpi-val" style="font-size:18px;">0%</div>
+                        <div class="kpi-val" style="font-size:14.5px;">0%</div>
                         <div class="kpi-subtext">Strictly Advisory</div>
                     </div>
                     <div class="kpi-stat-card purple">
                         <div class="kpi-label">Re-Audit Cadence</div>
-                        <div class="kpi-val" style="font-size:18px;">Bi-Annual</div>
+                        <div class="kpi-val" style="font-size:14.5px;">Bi-Annual</div>
                         <div class="kpi-subtext">Every Academic Term</div>
                     </div>
                     <div class="kpi-stat-card green">
                         <div class="kpi-label">Student Appeal</div>
-                        <div class="kpi-val" style="font-size:18px;">Protected</div>
+                        <div class="kpi-val" style="font-size:14.5px;">Protected</div>
                         <div class="kpi-subtext">LGPD / GDPR Compliant</div>
                     </div>
                 </div>

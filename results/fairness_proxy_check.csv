@@ -1,0 +1,6 @@
+Protected_Attribute,Predictor_Set,Proxy_Model_AUC,Flag_AUC_Above_0.70
+Gender (genero_F),Non-Protected Features,0.607,NO
+Race (Parda),Non-Protected Features,0.546,NO
+Income (rendabruta >= median),Non-Protected Features (excl. Income),0.679,NO
+Age (idade >= median),Non-Protected Features,0.962,YES (Proxy Risk)
+Digital Access (Notebooks > 0),Non-Protected Features (excl. Notebooks),0.707,YES (Proxy Risk)

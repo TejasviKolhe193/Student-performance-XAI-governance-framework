@@ -1,0 +1,4 @@
+Threshold,Flags_per_1000_Students,Expected_Recall,Expected_Precision,Total_Flags_Per_5000_Cohort,Weeks_for_One_Counselor,Counselors_Needed_for_4Wk_SLA
+0.4,260,0.709,0.61,1302,26.0,7
+0.5,214,0.656,0.686,1072,21.4,6
+0.7,152,0.554,0.818,759,15.2,4

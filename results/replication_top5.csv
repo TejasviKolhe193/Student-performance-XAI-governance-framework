@@ -1,0 +1,6 @@
+Run,Balance,FS,Model,Recall,Precision,F1,AUC,Accuracy,MEDIA_10_CV,Best_Params
+13,UnderSampling,ANOVA,RF,0.797,0.705,0.748,0.912,0.88,0.778,"{'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 5}"
+14,UnderSampling,ANOVA,DT,0.79,0.493,0.607,0.777,0.771,0.768,"{'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 2}"
+21,UnderSampling,Feature Importance,RF,0.785,0.709,0.745,0.908,0.88,0.771,"{'max_depth': 20, 'min_samples_leaf': 1, 'min_samples_split': 2}"
+22,UnderSampling,Feature Importance,DT,0.774,0.497,0.606,0.774,0.774,0.778,"{'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 2}"
+17,UnderSampling,Backward Selection,RF,0.757,0.562,0.645,0.865,0.813,0.733,"{'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 5}"

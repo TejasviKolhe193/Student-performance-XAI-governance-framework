@@ -1,0 +1,8 @@
+Model,Metric,Base Paper (Silva et al.),This Replication,Difference,Match (|Diff| <= 0.02)?
+RF + SMOTEENN + Backward Selection,Recall,0.854,0.656,-0.198,EXPLAINED
+RF + SMOTEENN + Backward Selection,Precision,0.847,0.686,-0.161,EXPLAINED
+RF + SMOTEENN + Backward Selection,F1-Score,0.849,0.67,-0.179,EXPLAINED
+RF + SMOTEENN + Backward Selection,ROC-AUC,0.854,0.854,0.0,YES
+RF + SMOTEENN + Backward Selection,Accuracy,0.852,0.856,0.004,YES
+RF + SMOTEENN + Backward Selection,MEDIA_10_CV,0.87,0.931,0.061,EXPLAINED
+DT + SMOTEENN + Backward Selection,Recall,0.818,0.676,-0.142,EXPLAINED

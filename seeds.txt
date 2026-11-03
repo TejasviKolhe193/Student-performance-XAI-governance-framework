@@ -1,0 +1,12 @@
+GLOBAL_SEED=42
+train_test_split_seed=42
+SMOTE_seed=42
+RandomUnderSampler_seed=42
+SMOTEENN_seed=42
+RandomForest_seed=42
+DecisionTree_seed=42
+LogisticRegression_seed=42
+SVM_seed=42
+StratifiedKFold_seed=42
+LIME_seed=42
+Bootstrap_Fairness_seed=42

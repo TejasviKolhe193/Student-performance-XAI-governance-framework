@@ -1,0 +1,7 @@
+Threshold,Attribute,Privileged_Group,Unprivileged_Group,Sel_Rate_Priv,Sel_Rate_Unpriv,Disparate_Impact,DI_Status,Statistical_Parity_Diff,SPD_Status,TPR_Priv,TPR_Unpriv,Equal_Opportunity_Diff,EOD_Status,P_Value_EOD,Holm_Significant
+0.5,Gender (M vs F),gender_priv=1,gender_priv=0,0.2829,0.2296,0.8116,"Pass [0.80, 1.25]",-0.0533,Pass (|spd|<=0.10),0.7653,0.75,-0.0153,Pass (|eod|<=0.10),0.56989,False
+0.5,Race (Branca vs Parda),raca=Branca,raca=Parda,0.2153,0.2621,1.2174,"Pass [0.80, 1.25]",0.0468,Pass (|spd|<=0.10),0.6569,0.7849,0.128,Flagged,0.00122,True
+0.5,Race (Branca vs Preta),raca=Branca,raca=Preta,0.2153,0.2523,1.172,"Pass [0.80, 1.25]",0.037,Pass (|spd|<=0.10),0.6569,0.7466,0.0896,Pass (|eod|<=0.10),0.09903,False
+0.5,Income (> Med vs <= Med),income_priv=1,income_priv=0,0.1912,0.3178,1.6619,Flagged,0.1266,Flagged,0.6923,0.8068,0.1145,Flagged,3e-05,True
+0.5,Age (<=20 vs >20),age_priv=1,age_priv=0,0.2065,0.2973,1.4397,Flagged,0.0908,Pass (|spd|<=0.10),0.7392,0.7706,0.0314,Pass (|eod|<=0.10),0.25533,False
+0.5,Computer Access (>=1 vs 0),computer_priv=1,computer_priv=0,0.2023,0.2765,1.3669,Flagged,0.0742,Pass (|spd|<=0.10),0.6885,0.7805,0.092,Pass (|eod|<=0.10),0.00344,True

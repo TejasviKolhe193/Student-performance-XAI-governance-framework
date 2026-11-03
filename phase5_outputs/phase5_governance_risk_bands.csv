@@ -1,9 +1,9 @@
-Threshold,Band_Label,Expected_Flags_Per_1000_Students,Expected_Precision,Expected_Recall,Historical_Dropout_Catch_Rate,False_Alarm_Rate_In_Flags
-0.8,Tier 1: Emergency Intervention Band,198,0.7911,0.6982,69.8%,20.9%
-0.7,Tier 2: High Priority At-Risk Band,205,0.7724,0.7061,70.6%,22.8%
-0.6,Tier 3: Moderate Risk Advisory Band,226,0.72,0.7278,72.8%,28.0%
-0.5,Tier 4: Baseline Standard Threshold,255,0.667,0.7584,75.8%,33.3%
-0.4,Tier 5: Early Sensitivity Screening,290,0.6035,0.7821,78.2%,39.6%
-0.3,Tier 6: Broad Precautionary Monitoring,324,0.5532,0.7998,80.0%,44.7%
-0.2,Tier 7: Low Concern Baseline,476,0.4074,0.8659,86.6%,59.3%
-0.1,Tier 8: Universal Inclusion Screening,644,0.3237,0.93,93.0%,67.6%
+Threshold,Band_Label,Expected_Flags_Per_1000_Students,Expected_Precision,Expected_Recall,Historical_Dropout_Catch_Rate,False_Alarm_Rate_In_Flags,Total_Flags_Per_5000_Cohort,Weeks_for_One_Counselor,Counselors_Needed_for_4Wk_SLA
+0.8,Tier 1: Emergency Intervention Band,198,0.7911,0.6982,69.8%,20.9%,989,19.8,5
+0.7,Tier 2: High Priority At-Risk Band,205,0.7724,0.7061,70.6%,22.8%,1024,20.5,6
+0.6,Tier 3: Moderate Risk Advisory Band,226,0.72,0.7278,72.8%,28.0%,1132,22.6,6
+0.5,Tier 4: Baseline Standard Threshold,255,0.667,0.7584,75.8%,33.3%,1274,25.5,7
+0.4,Tier 5: Early Sensitivity Screening,290,0.6035,0.7821,78.2%,39.6%,1452,29.0,8
+0.3,Tier 6: Broad Precautionary Monitoring,324,0.5532,0.7998,80.0%,44.7%,1620,32.4,9
+0.2,Tier 7: Low Concern Baseline,476,0.4074,0.8659,86.6%,59.3%,2381,47.6,12
+0.1,Tier 8: Universal Inclusion Screening,644,0.3237,0.93,93.0%,67.6%,3218,64.4,17

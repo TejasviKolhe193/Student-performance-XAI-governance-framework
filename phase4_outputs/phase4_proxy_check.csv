@@ -1,0 +1,6 @@
+Protected_Attribute,Predictor_Feature_Set,Proxy_Model_AUC,Flag_AUC_Above_0.70
+genero (Gender),All Other Non-Protected Attributes,0.62,NO
+raca (Race),All Other Non-Protected Attributes,0.598,NO
+rendabruta (Income),All Other Non-Protected Attributes,0.684,NO
+idade (Age),All Other Non-Protected Attributes,0.96,YES (Proxy Risk)
+quantidade_notebooks (Digital Access),All Other Non-Protected Attributes,0.716,YES (Proxy Risk)

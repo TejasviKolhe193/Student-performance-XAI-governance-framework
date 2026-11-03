@@ -1,0 +1,5 @@
+Model,Balancing,Feature_Selection,Recall,Precision,F1_score,AUC,Accuracy,MEAN_10_CV,Elapsed_s,Key,Rank
+DT,UnderSampling,Feature Importance,0.7505,0.6705,0.7082,0.8736,0.8615,0.7689,0.22,DT_UnderSampling_Feature Importance,1
+RF,UnderSampling,Feature Importance,0.7268,0.752,0.7392,0.8929,0.8851,0.7457,1.66,RF_UnderSampling_Feature Importance,3
+SVM,SMOTEENN,Feature Importance,0.6055,0.4508,0.5168,0.7592,0.7464,0.716,1.37,SVM_SMOTEENN_Feature Importance,22
+LR,SMOTEENN,Feature Importance,0.5957,0.4572,0.5173,0.7565,0.751,0.7016,3.87,LR_SMOTEENN_Feature Importance,27

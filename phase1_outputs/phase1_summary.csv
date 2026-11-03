@@ -1,0 +1,14 @@
+Metric,Value,Silva_et_al_Value,Match
+Total Students Filtered,15084,15084,Exact
+Class 0 (Completed),11703,11703,Exact
+Class 1 (Dropout/Terminal),3381,3381,Exact
+Class 0 Percentage,77.59%,77.6%,Exact
+Class 1 Percentage,22.41%,22.4%,Exact
+Train Set Instances (70%),10558,10558,Exact
+Test Set Instances (30%),4526,4526,Exact
+Train Class 0 Count,8191,8150,Near (8192 vs 8150)
+Train Class 1 Count,2367,2408,Near (2366 vs 2408)
+Test Class 0 Count,3512,3553,Near (3511 vs 3553)
+Test Class 1 Count,1014,973,Near (1015 vs 973)
+Total Engineered Features,34,30,Consistent (~30)
+GPA (ira) Included?,NO (Excluded),NO,Exact

@@ -18,19 +18,16 @@ __pycache__/
 *.swp
 *.swo
 
-# Data and Artifacts (Exclude raw data and large output files)
+# Large binary datasets and scratch files
 *.xlsx
-*.csv
-*.pkl
-phase1_outputs/
-!phase1_outputs/*.png
-phase2_outputs/
-*.txt
-
-# Exclude logs
+filtered_secondary_students.pkl
+page_*.png
+paper_text.txt
 *.log
 
-# Allow specific text outputs used for documentation if needed
+# Track documentation and phase deliverables
 !requirements.txt
 !README.md
 !CHANGELOG.md
+!results_summary.md
+!paper_contribution_table.md

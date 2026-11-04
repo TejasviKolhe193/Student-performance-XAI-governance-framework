@@ -1,0 +1,2 @@
+Metric,Value,Reference_Benchmark,Brier_Skill_Score
+Raw Random Forest Test Brier Score,0.0623,Prevalence Dummy Baseline = 0.1739,64.14% improvement over guessing prevalence

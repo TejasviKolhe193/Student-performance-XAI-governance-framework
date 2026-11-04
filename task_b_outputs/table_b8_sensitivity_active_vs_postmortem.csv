@@ -1,0 +1,4 @@
+Cohort_Definition,Total_N,True_Dropouts,True_Completers,Prevalence_Pct,TP,FP,TN,FN,Recall_Catch_Rate,Precision,Accuracy
+"Active Enrolled Students (GPA > 0, Year 1 Attending)",2722,490,2232,18.0%,396,84,2148,94,80.8%,82.5%,93.5%
+"Administrative Post-Mortem Records (GPA == 0, Immediate Exit)",295,186,109,63.1%,177,28,81,9,95.2%,86.3%,87.5%
+"Combined Full Test Vault (N = 3,017 Total Benchmark)",3017,676,2341,22.4%,573,112,2229,103,84.8%,83.6%,92.9%

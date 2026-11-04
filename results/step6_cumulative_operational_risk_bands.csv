@@ -1,0 +1,9 @@
+Threshold,Tier_Label,Flags_Per_1000,Expected_Flags_5000_Cohort,Precision_PPV,Recall_Catch_Rate,Observed_Dropout_Rate_In_Flags,False_Alarm_Rate_In_Flags,Weeks_for_One_Counselor,Counselors_Needed_4Wk_SLA,Recommended_Action_Protocol
+0.8,Tier 1: Emergency Intervention Band,125,626,0.9524,0.5325,0.9524,0.0476,12.5,4,Mandatory counselor case review & emergency retention stipend
+0.7,Tier 2: High Priority At-Risk Band,145,726,0.9209,0.5966,0.9209,0.0791,14.5,4,"Social worker outreach, transport assistance, peer tutoring"
+0.6,Tier 3: Moderate Risk Advisory Band,167,836,0.8732,0.6519,0.8732,0.1268,16.7,5,"Academic advisor check-in, course failure remediation plan"
+0.5,Tier 4: Baseline Standard Threshold,217,1084,0.7564,0.7318,0.7564,0.2436,21.7,6,"General counselor notification, automated attendance monitoring"
+0.4,Tier 5: Early Sensitivity Screening,289,1447,0.6183,0.7988,0.6183,0.3817,28.9,8,"Classroom teacher notification, voluntary group tutoring"
+0.3,Tier 6: Broad Precautionary Monitoring,446,2230,0.4408,0.8777,0.4408,0.5592,44.6,12,"Departmental cohort tracking, term-start check-ins"
+0.2,Tier 7: Low Concern Baseline,747,3736,0.2874,0.9586,0.2874,0.7126,74.7,19,Standard educational advising & institutional orientation
+0.1,Tier 8: Universal Inclusion Screening,995,4977,0.2251,1.0,0.2251,0.7749,99.5,25,Universal institutional demographic tracking

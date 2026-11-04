@@ -1,0 +1,3 @@
+Model,Balancing,Feature_Selection,CV_Recall,CV_Precision,CV_ROC_AUC,Test_Recall,Test_Precision,Test_Accuracy,Test_ROC_AUC,Status
+Random Forest,UnderSampling,Feature Importance (k=19),0.7495,0.7694,0.9144,0.7318,0.7564,0.8871,0.8968,CHOSEN (Passes AUC >= 0.90 & Precision >= 0.60 on CV)
+Decision Tree,UnderSampling,Feature Importance (k=19),0.7719,0.6852,0.8875,0.7505,0.6705,0.8615,0.8736,Candidate Runner-up

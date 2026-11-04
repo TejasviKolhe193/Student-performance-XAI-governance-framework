@@ -1,0 +1,4 @@
+Baseline_Model,Decision_Rule,Recall,Precision,Accuracy,F1_Score,Explanation
+Majority-Class Baseline,Predict Completed (0) for all students,0.0,0.0,0.7759363606231355,0.0,Captures 0 vulnerable students; sets 77.6% accuracy lower bound
+Attendance Heuristic Rule (<75%),Flag Dropout if Attendance < 75.0%,0.0666,0.9574,0.7915,0.1245,"On 3,017 test set, only 47 students had <75% attendance; 45 dropped out (95.7% precision), but it misses 93.3% of dropouts (631 missed)"
+Random Forest Champion,"Trained RF, tau=0.50 threshold",0.8476,0.8365,0.9287,0.842,Captures 573 of 676 dropouts with 112 false alarms (22.7 alerts/100 students)

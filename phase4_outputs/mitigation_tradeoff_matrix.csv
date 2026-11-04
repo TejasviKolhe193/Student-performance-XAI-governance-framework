@@ -1,0 +1,7 @@
+Metric,Pre_Mitigation,Post_Mitigation,Change
+Recall (Catch Rate),0.8476,0.7944,-0.0533
+Precision,0.8365,0.9454,0.1089
+Overall Accuracy,0.9287,0.9437,0.0149
+F1-Score,0.842,0.8633,0.0213
+Gender Disparate Impact (DI),0.7066,0.648,-0.0586
+Gender Equal Opportunity Diff (EOD),-0.0573,-0.1015,-0.0442

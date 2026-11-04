@@ -1,0 +1,2 @@
+Model,Test_Cohort_N,True_Dropouts_P,True_Completers_N,True_Positives_TP,False_Positives_FP,True_Negatives_TN,False_Negatives_FN,Sensitivity_Recall,Precision,Specificity,Accuracy,F1_Score,ROC_AUC,Advisor_Flags_Count,Advisor_Flags_Per_100_Students
+Random Forest Champion (UnderSampling + FeatureImportance),3017,676,2341,573,112,2229,103,0.8476,0.8365,0.9522,0.9287,0.842,0.9506,685,22.7

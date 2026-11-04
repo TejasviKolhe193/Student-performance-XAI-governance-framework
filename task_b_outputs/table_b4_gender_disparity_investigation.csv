@@ -1,0 +1,3 @@
+Gender_Subgroup,Status,Total_N,True_Dropouts_P,True_Completers_N,TP,FP,TN,FN,Recall_TPR,Precision,FPR,Selection_Rate,Disparate_Impact_DI,Equal_Opportunity_Diff_EOD
+Male (Privileged),Privileged,1417,365,1052,319,62,990,46,0.874,0.8373,0.0589,0.2689,0.7066,-0.0573
+Female (Unprivileged),Unprivileged,1600,311,1289,254,50,1239,57,0.8167,0.8355,0.0388,0.19,0.7066,-0.0573

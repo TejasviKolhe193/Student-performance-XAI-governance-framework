@@ -1,0 +1,4 @@
+Model,Recall_Sensitivity,Precision,Specificity,Accuracy,F1_Score,ROC_AUC
+Majority Class Baseline (Always Predict Graduate),"0.0% [0.0%, 0.0%]","0.0% [0.0%, 0.0%]","100.0% [100.0%, 100.0%]",77.6%,0.0000,0.5000
+Heuristic Rule Baseline (Attendance < 75% -> Dropout),6.7%,95.7%,99.9%,79.0%,0.1245,0.5903
+Random Forest Champion (Proposed Framework),"84.8% [82.0%, 87.4%]","83.6% [81.0%, 86.4%]","95.2% [94.4%, 96.1%]","92.9% [91.9%, 93.8%]","0.8420 [0.8197, 0.8621]","0.9506 [0.9387, 0.9607]"

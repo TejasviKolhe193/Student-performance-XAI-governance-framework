@@ -1,0 +1,4 @@
+Model_Label,Classifier,Balancing,Feature_Selection,Test_Recall,Test_Precision,Test_F1,Test_ROC_AUC,Test_Accuracy,10_CV_Recall,Hyperparameters
+Champion in OLD Draft (Row 6),RF,UnderSampling,FeatureImportance,0.848,0.836,0.842,0.951,0.929,0.878,"{'criterion': 'gini', 'max_depth': 20, 'min_samples_split': 5}"
+Alternative RF in Current Draft (Row 20),RF,OverSampling (SMOTE),ANOVA,0.817,0.914,0.863,0.95,0.942,0.949,"{'criterion': 'gini', 'max_depth': 20, 'min_samples_split': 2}"
+"Unconstrained Recall Winner (SVM, Row 0)",SVM,SMOTEENN,ANOVA,0.914,0.231,0.369,0.591,0.301,0.873,"{'C': 0.1, 'kernel': 'rbf'}"

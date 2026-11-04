@@ -1,0 +1,7 @@
+Metric,Pre_Mitigation,Post_Mitigation,Delta
+Recall,0.7318,0.6036,-0.1282
+Precision,0.7564,0.9372,0.1808
+F1-Score,0.7439,0.7343,-0.0096
+Accuracy,0.8871,0.9021,0.015
+Gender Disparate Impact (DI),0.7383,0.7046,-0.0337
+Gender Equal Opportunity Diff (EOD),-0.0422,-0.0304,0.0118

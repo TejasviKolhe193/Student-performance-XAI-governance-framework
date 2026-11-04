@@ -1,0 +1,4 @@
+Risk_Tier,Probability_Interval,Student_Count_N,Cohort_Share_Pct,Mean_Predicted_Prob,Empirical_Dropout_Rate,Reliability_Calibration_Gap
+Tier 1 (Low Risk / Safe),P < 0.40,2258,74.8%,12.2%,4.2%,8.0 pp
+Tier 2 (Moderate Risk / Watchlist),0.40 <= P <= 0.70,157,5.2%,52.3%,20.4%,31.9 pp
+Tier 3 (High Risk / Urgent Intervention),P > 0.70,602,20.0%,93.4%,91.2%,2.2 pp

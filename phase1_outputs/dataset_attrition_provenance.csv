@@ -1,0 +1,7 @@
+Stage,Records_Remaining,Records_Excluded,Exclusion_Reason,Selection_Bias_Assessment
+1. Raw Institutional Database Extraction,48311,0,None (Raw institutional records from Brazilian Federal Institutes),Includes all academic levels across vocational and higher education.
+2. Modality Filter (Secondary Technical Education),36273,12038,"Exclusion of Higher Education degrees (Licenciatura, Bacharelado, Tecnologia, Engenharia)",Restricts cohort specifically to secondary technical diploma education (Ensino Técnico).
+3. Terminal Status Filter (Completed vs. Dropped Out),15084,21189,"Exclusion of active, non-terminal statuses (Matriculado, Trancado, Formado, Aguardando, etc.)",Ensures ground-truth binary labels reflect definitive educational completion vs. permanent exit.
+4. Final Analyzed Cohort (Silva et al. 2025 benchmark),15084,0,"Exact cohort benchmark: 11,703 Completed (77.6%), 3,381 Dropout (22.4%)",Exact replication cohort size matching Silva et al. IEEE RITA 2025.
+5a. Stratified Training Vault (80%),12067,0,"Used strictly for balancing, feature selection, and model training",Stratified random split preserving 22.4% dropout prevalence.
+5b. Held-Out Untouched Test Vault (20%),3017,0,Used strictly for final independent model evaluation,"Preserves exact 22.4% test prevalence (676 Dropouts, 2,341 Completers)."

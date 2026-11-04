@@ -1,0 +1,7 @@
+Dimension,Equal_Opportunity_Diff_EOD,P_Value_EOD,Rank_i,Holm_Threshold,Significant_After_Correction
+Income (> Med vs <= Med),0.1007,0.00043,1,0.008333,True
+Computer Ownership (>=1 vs 0),0.1109,0.000887,2,0.01,True
+Race (Branca vs Parda),0.1014,0.014438,3,0.0125,False
+Gender (M vs F),-0.0422,0.135435,4,0.016667,False
+Age (<=20 vs >20),0.0126,0.663392,5,0.025,False
+Race (Branca vs Preta),0.028,0.704169,6,0.05,False

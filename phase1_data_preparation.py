@@ -314,7 +314,7 @@ for col in edu_cols:
     print(f"  {col}: encoded to ordinal [0..{len(edu_order)-1}]")
 
 # ── LabelEncoder for remaining categorical columns ──
-remaining_cat = df.select_dtypes(include=["object", "bool", "str"]).columns.tolist()
+remaining_cat = df.select_dtypes(include=["object", "bool"]).columns.tolist()
 if remaining_cat:
     print(f"\n  LabelEncoder for remaining categoricals: {remaining_cat}")
     label_encoders = {}

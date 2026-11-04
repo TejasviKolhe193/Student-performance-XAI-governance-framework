@@ -1,0 +1,6 @@
+Probability_Interval,Tier_Name,Student_Count,Percentage_of_Cohort,Mean_Predicted_Prob,Actual_Dropouts,Observed_Dropout_Rate,Calibration_Discrepancy
+"[0.80, 1.00]",Emergency Tier,567,12.53,0.922,540,0.9524,0.0303
+"[0.60, 0.80)",High Priority Tier,190,4.2,0.6941,121,0.6368,-0.0572
+"[0.40, 0.60)",Moderate Risk / Watchlist,553,12.22,0.4863,149,0.2694,-0.2169
+"[0.20, 0.40)",Low Concern Tier,2072,45.78,0.2799,162,0.0782,-0.2017
+"[0.00, 0.20)",Minimal Risk Tier,1144,25.28,0.1549,42,0.0367,-0.1182

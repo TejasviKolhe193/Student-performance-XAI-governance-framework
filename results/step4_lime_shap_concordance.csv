@@ -1,0 +1,4 @@
+Archetype,Test_Index,Predicted_Risk,Actual_Outcome,SHAP_Top3,LIME_Top3,Common_Features,Intersection_Count,Union_Count,Jaccard_Overlap
+High-Risk Student,815,0.8618,1,"['anoingresso', 'idade', 'reprovacoes']","['reprovacoes', 'anoingresso', 'percentual_frequencia']","['reprovacoes', 'anoingresso']",2,4,0.5
+Borderline Student,4078,0.4798,1,"['reprovacoes', 'rendabruta', 'anoingresso']","['reprovacoes', 'anoingresso', 'percentual_frequencia']","['reprovacoes', 'anoingresso']",2,4,0.5
+Low-Risk Student,4458,0.1911,0,"['reprovacoes', 'percentual_frequencia', 'anoingresso']","['reprovacoes', 'percentual_frequencia', 'anoingresso']","['reprovacoes', 'percentual_frequencia', 'anoingresso']",3,3,1.0

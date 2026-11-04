@@ -1,0 +1,5 @@
+Balance,FS,Model,Recall,Precision,F1,AUC,Accuracy,10-CV Recall,Best Params
+UnderSampling,ANOVA,RF,0.78,0.69,0.732,0.9,0.872,0.779,"{'criterion': 'gini', 'max_depth': None, 'min_samples_split': 5}"
+UnderSampling,ANOVA,DT,0.771,0.508,0.613,0.782,0.782,0.773,"{'criterion': 'entropy', 'max_depth': 20, 'min_samples_split': 2}"
+OverSampling (SMOTE),Backward,LR,0.559,0.521,0.539,0.764,0.786,0.545,"{'C': 10.0, 'solver': 'lbfgs'}"
+SMOTEENN,FeatureImportance,SVM,0.59,0.281,0.381,0.601,0.57,0.697,"{'C': 10.0, 'kernel': 'rbf'}"

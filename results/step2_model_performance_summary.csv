@@ -1,0 +1,11 @@
+Model,Metric,Value,CI_95
+Random Forest,Recall,0.7268,"[0.7008, 0.7558]"
+Random Forest,Precision,0.752,"[0.7232, 0.7778]"
+Random Forest,F1-Score,0.7392,"[0.7174, 0.7613]"
+Random Forest,Accuracy,0.8851,"[0.8756, 0.8940]"
+Random Forest,ROC-AUC,0.8929,"[0.8793, 0.9062]"
+Random Forest,Brier Score,0.1097,N/A
+Baseline: Majority Class,Accuracy,0.776,N/A
+Baseline: Attendance (<= 91%),Recall,0.3215,N/A
+Baseline: Attendance (<= 91%),Precision,0.6392,N/A
+Baseline: Attendance (<= 91%),ROC-AUC,0.5945,N/A

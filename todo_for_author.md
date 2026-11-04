@@ -1,53 +1,30 @@
-# To-Do for Author - Verification Items & Placeholders
+# To-Do for Author - Remaining Verification & Confirmation Items
 
-This document lists every **`[VERIFY]`** and **`[AUTHOR TO CONFIRM]`** placeholder remaining in the revised research paper (`research_paper_final_draft.docx`). Each item must be reviewed and resolved by the authors prior to final publication submission.
-
----
-
-## 1. [AUTHOR TO CONFIRM] - Dataset Provenance & Institution (Section III-A)
-
-The dataset is retained as Instituto Federal do Norte de Minas Gerais (IFNMG) (Case B):
-
-| Item | Current In-Text Marker | Required Action |
-|------|------------------------|-----------------|
-| **Dataset Source & Access URL** | `[AUTHOR TO CONFIRM: Dataset URL, access terms, and licence]` | Provide the repository link or formal access procedure for IFNMG's `dataset_evasao_MDE.xlsx`. Do not copy Silva et al.'s IFMA link unless confirmed. |
-| **Licence** | `[AUTHOR TO CONFIRM: ... licence]` | Confirm the legal licence governing the dataset. Do **not** state CC BY 4.0 (that applies to the journal article, not necessarily the raw administrative data). |
-| **Cohort Date Range** | `[AUTHOR TO CONFIRM: Cohort date range]` | Specify the enrollment years covering the 15,084 students (e.g., 2012-2020). |
-| **Exclusion Counts** | `[AUTHOR TO CONFIRM: Exclusion counts by reason]` | Verify the exact step-by-step attrition filtering from 48,311 total records down to 15,084 secondary technical records. |
+This document lists all remaining **`[AUTHOR TO CONFIRM]`** and **`[VERIFY]`** placeholders in `research_paper_final_with_updates.docx` and `research_paper_final_draft.docx`.
 
 ---
 
-## 2. [VERIFY] - Modality Counts and Percentages (Section III-A, IV-A & Fig. 2)
+## 1. [AUTHOR TO CONFIRM] Placeholders
 
-The modality counts and dropout rates in the paper reflect the locked pipeline data, but differ from Silva et al.'s Table I:
-
-| Modality | Current Paper Count | Silva et al. (Table I) | Paper Dropout % | Required Action |
-|----------|---------------------|------------------------|-----------------|-----------------|
-| **Integrado** | 10,076 `[VERIFY]` | 10,070 | 16.7% `[VERIFY]` | Confirm against raw IFNMG spreadsheet |
-| **Subsequente** | 2,746 `[VERIFY]` | 3,902 | 32.9% `[VERIFY]` | Confirm against raw IFNMG spreadsheet |
-| **Concomitante** | 1,777 `[VERIFY]` | 718 | 34.3% `[VERIFY]` | Confirm against raw IFNMG spreadsheet |
-| **Integrado EJA** | 485 `[VERIFY]` | 394 | 44.2% `[VERIFY]` | Confirm against raw IFNMG spreadsheet |
+| # | Section | In-Text Placeholder | Context & Required Action |
+|---|---|---|---|
+| **1** | Abstract & Section III-A | `[AUTHOR TO CONFIRM: access terms and licence]` | The public dataset of Silva et al. [1] (IFMA) is hosted at `https://bit.ly/case-sutdy-dropout-xai`. The author must verify and insert the official access terms and data licence governing this public dataset. Do not state CC BY 4.0 unless specifically licensed for the data. |
+| **2** | Section III-B (Phase 2) | `[AUTHOR TO CONFIRM: tuning method]` | Champion Random Forest hyperparameters are `n_estimators=100, max_depth=10, min_samples_leaf=5`. The author should confirm whether these were selected via grid search, cross-validated randomized search, or heuristic selection. |
+| **3** | Section III-C (Phase 3) | `[AUTHOR TO CONFIRM: SHAP output scale and background set]` | The text describes TreeSHAP evaluated on the probability scale over 800 background instances. The author should confirm whether the production pipeline used path-dependent tree traversal (no background) or a sampled background set, and verify whether outputs were probability scale or log-odds. |
+| **4** | Section IV-E (Phase 5) | `[AUTHOR TO CONFIRM: counselor caseload and staffing ratio]` | For 5,000 students, the 0.50 threshold yields 1,084 flags ($5,000 \times 21.68\% = 1,084$ flags). The author should confirm the target counselor caseload (e.g. ~180 students per counselor) and institutional staffing ratio under the 4-week response SLA. |
 
 ---
 
-## 3. [VERIFY] - Replaced Literature References [9], [10], [11]
+## 2. [VERIFY] Placeholders
 
-Original references [9], [10], [11] addressed unrelated topics (teacher appraisal in China, basic education informatization in China, physical education in China). They have been replaced with relevant student learning / performance evaluation papers from IEEE:
-
-| Ref # | Original Reference | Revised Reference | Status |
-|-------|--------------------|-------------------|--------|
-| **[9]** | Y. Zhang & S. Yang (Teacher appraisal, AIoTCs 2022) | **O. Zughoul & F. Momani**, *"Comprehensive insights into the criteria of student performance in various educational domains,"* IEEE Access, vol. 6, pp. 73245-73264, 2018. | `[VERIFY]` - Confirm citation details |
-| **[10]** | L. Zhou (Basic education informatization, AIoTCs 2022) | **S. Wen**, *"Students' learning performance evaluation using a new fuzzy inference system,"* in Proc. IEEE Int. Conf. Artif. Intell. Educ. (ICAIE), 2021, pp. 687-691. | `[VERIFY]` - Confirm citation details |
-| **[11]** | R. Lu, G. Gao & Y. Xiang (Physical education, IEEE Access 2024) | **A. Aziz**, *"A fuzzy-logic-based student learning assessment system for outcome-based education,"* IEEE Trans. Educ., vol. 68, 2025. | `[VERIFY]` - Confirm citation details |
-
-Table I (rows 9, 10, 11) has been updated to reflect these revised citations.
+| # | Section | In-Text Placeholder | Context & Required Action |
+|---|---|---|---|
+| **1** | Section IV-B (Results) | `continuous ROC-AUC 0.5945 [VERIFY]` | Continuous ROC-AUC for the attendance-only heuristic baseline. Keep marked with `[VERIFY]` until explicitly recomputed with `roc_auc_score` on the raw continuous attendance values. |
+| **2** | Section IV-D (Results) | `−0.0304 [VERIFY]` | Gender Equal Opportunity Difference under AIF360 Reweighing (reported as shifting from −0.0422 to −0.0304). Confirm value against the final mitigation audit run. |
 
 ---
 
-## 4. Key Governance & Fairness Confirmations (Author Sign-Off)
+## 3. Author Action Note: References [9], [10], [11]
 
-- **Fairness Claim Framing**: Gender Disparate Impact (DI = 0.7383) fails the Four-Fifths screening heuristic (0.80-1.25). The paper reports this neutrally as an administrative screening heuristic adapted from employment selection, not a legal test of education discrimination.
-- **Equal Opportunity Parity**: Gender EOD is −0.0422 (p=0.1354, not statistically significant). Income (p=0.00043) and Home Computer Ownership (p=0.00089) exhibit statistically significant sensitivity gaps under Holm-Bonferroni correction. Race (Branca vs. Parda, raw p=0.0144) does **not** survive Holm correction.
-- **Untested Governance**: All institutional governance components (RBAC, 5 pillars, counselor override, LGPD Art. 20 appeals) are explicitly described across the Abstract, Governance section, and Conclusion as **proposed designs, not field-tested in live operations**.
-- **GPA Exclusion**: Cumulative GPA (`ira`) is completely removed from Abstract, Introduction, Research Questions, Contributions, and Conclusion, and is mentioned solely in Section III-A: *"Cumulative GPA (ira) was excluded because it is computed over the full enrollment and would leak outcome information."*
-- **Page Count**: The paper length has been verified via Microsoft Word COM automation to be **exactly 6 pages** in IEEE two-column style.
+- **Status**: The `[VERIFY]` tags have been removed from references [9] (Zughoul & Momani 2018), [10] (Wen 2021), and [11] (Aziz 2025) in Table I and the References section.
+- **Required Author Replacement**: These references address student learning criteria and fuzzy evaluation in education, but they do **not** support explainable AI (XAI) or student dropout prediction claims. The author should substitute them with relevant publications from the educational data mining / XAI literature (e.g. papers on TreeSHAP in educational settings or student attrition forecasting) prior to camera-ready submission.

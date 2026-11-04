@@ -1,4 +1,4 @@
 Student_Case,Test_Index,Predicted_Dropout_Risk,SHAP_Top3,LIME_Top3,Common_Features,Jaccard_Similarity
-High-Risk Student,525,0.8,"['rendabruta', 'mae_nivel_escolaridade', 'reprovacoes']","['percentual_frequencia', 'reprovacoes', 'idade']",['reprovacoes'],0.2
-Borderline Student,4491,0.5,"['rendabruta', 'percentual_frequencia', 'curso']","['trabalha', 'percentual_frequencia', 'reprovacoes']",['percentual_frequencia'],0.2
-Low-Risk Student,1584,0.1765,"['percentual_frequencia', 'anoingresso', 'reprovacoes']","['percentual_frequencia', 'reprovacoes', 'idade']","['percentual_frequencia', 'reprovacoes']",0.5
+High-Risk Student,525,0.8,"['reprovacoes', 'rendabruta', 'mae_nivel_escolaridade']","['percentual_frequencia', 'reprovacoes', 'idade']",['reprovacoes'],0.2
+Borderline Student,4491,0.5,"['percentual_frequencia', 'curso', 'rendabruta']","['percentual_frequencia', 'reprovacoes', 'trabalha']",['percentual_frequencia'],0.2
+Low-Risk Student,1584,0.1765,"['percentual_frequencia', 'reprovacoes', 'anoingresso']","['percentual_frequencia', 'reprovacoes', 'idade']","['percentual_frequencia', 'reprovacoes']",0.5

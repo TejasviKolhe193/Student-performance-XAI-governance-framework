@@ -20,7 +20,8 @@ This document lists all remaining **`[AUTHOR TO CONFIRM]`** and **`[VERIFY]`** p
 | # | Section | In-Text Placeholder | Context & Required Action |
 |---|---|---|---|
 | **1** | Section IV-B (Results) | `continuous ROC-AUC 0.5945 [VERIFY]` | Continuous ROC-AUC for the attendance-only heuristic baseline. Keep marked with `[VERIFY]` until explicitly recomputed with `roc_auc_score` on the raw continuous attendance values. |
-| **2** | Section IV-D (Results) | `−0.0304 [VERIFY]` | Gender Equal Opportunity Difference under AIF360 Reweighing (reported as shifting from −0.0422 to −0.0304). Confirm value against the final mitigation audit run. |
+| **2** | Section IV-B (Results) | `0.9144 [VERIFY]` | Training 10-fold cross-validation ROC-AUC for the champion Random Forest (`CV Recall 74.95%, CV Precision 76.94%, CV ROC-AUC 0.9144`). Present in `results/step2_candidate_models_comparison.csv` (row 0). Keep marked with `[VERIFY]` until the author confirms `step2_candidate_models_comparison.csv` as the final run. |
+| **3** | Section IV-D (Results) | `−0.0304 [VERIFY]` | Gender Equal Opportunity Difference under AIF360 Reweighing (reported as shifting from −0.0422 to −0.0304). Confirm value against the final mitigation audit run. |
 
 ---
 
